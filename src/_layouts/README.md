@@ -1,0 +1,1 @@
+These are the templates that wrap posts, pages, and even other layouts. Layouts are chosen on a file-by-file basis via the front matter (and you can configure default layouts for different document types or folder paths). The Liquid tag {{ content }} is used to inject page content into the layout template.

@@ -1,0 +1,1 @@
+A place for well-formatted structured data. Bridgetown will autoload these files and they will then be accessible via site.data. For example, given members.yml, you can access the contents of that file via site.data.members. Supported formats are: .yml/.yaml, .json, .csv, and .tsv.

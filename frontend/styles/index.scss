@@ -1,0 +1,31 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.pb-xxl {
+  padding-bottom: 3rem;
+}
+
+.pt-xxl {
+  padding-top: 3rem;
+}
+
+.py-xxl {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.text-xxl {
+  font-size: 2rem;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  &::before {
+    content: '';
+    background: black;
+    width: 100%;
+    display: block;
+    height: 9px;
+  }
+}

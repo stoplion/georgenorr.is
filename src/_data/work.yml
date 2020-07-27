@@ -1,0 +1,93 @@
+- company: Salesforce
+  position: Senior Engineer
+  website: http://salesforce.com
+  startDate: March 2016
+  endDate: Present
+  summary:
+  highlights:
+    - Designed the architecture for Trailmaker, Salesforces Trailhead content editor
+    - Built JWT authentication system for Trailmaker
+    - Tackled scaling issues by designing and leading the transitioning to an asynchronous background architecture — using Redis and a queue system to handle long-running/CPU intensive requests.
+    - Built the UI for Trailmaker using, React, Redux, Styled-Components
+    - Lead the effort to introduce an end-to-end testing suite using Cypress
+    - Setup the Heroku instances, buildpacks, environment variable handlers, etc.
+      to deploy Trailmaker to production and other environments
+  keywords:
+    - Node.js
+    - Optimizely
+    - Javascript
+    - CSS
+    - Git
+
+- company: OpenTable
+  position: Senior Engineer
+  website: http://opentable.com
+  startDate: August 2015
+  endDate: March 2016
+  summary:
+  highlights:
+    - Worked on OpenTables NodeJS backend which powers it's restaurant listings
+    - Setup AB testing (using Optimizely), to test incremental UI changes
+    - Implemented load testing simulations for improving performance during peak seasons
+  keywords:
+    - Node.js
+    - Optimizely
+    - Javascript
+    - CSS
+    - Git
+
+- company: Upstart
+  position: Senior Engineer
+  website: http://upstart.com
+  startDate: Feb 2014
+  endDate: Aug 2015
+  summary:
+  highlights:
+    - Built the frontend for Upstarts lending platform
+    - Lead the technical implementation for a redesigned user signup flow, using Ruby On Rails and AngularJS.
+    - Introduced Javascript unit testing to the application
+  keywords:
+    - Ruby on Rails
+    - Postgres
+    - Javascript
+    - Angular
+    - Sass
+    - Jasmine
+    - Git
+
+- company: Dominion Enterprises
+  position: Front End Engineer
+  website: https://www.dominionenterprises.com/
+  startDate: Dec 2010
+  endDate: Sep 2013
+  summary:
+  highlights:
+    - Built the frontend for several Dominion web properties
+    - Built the first ever responsive design website for Dominion Enterprises's job portal
+    - Introduced Javascript unit testing to the application
+  keywords:
+    - Ruby on Rails
+    - Postgres
+    - CoffeeScript
+    - Backbone
+    - Sass
+    - Jasmine
+    - Git
+
+- company: THE HOOPLE GROUP
+  position: Front End Engineer
+  website:
+  startDate: May 2008
+  endDate: Sep 2010
+  summary: Designed letterhead, business cards, marketing brouchures, and brand material within the personal finance industry. Designed and developed the Hoople Group Website (no longer live).
+  highlights:
+  keywords:
+
+- company: YOU + WE
+  position: Web Developer / Graphic Designer
+  website:
+  startDate: May 2008
+  endDate: Sep 2010
+  summary: 'Designed and developed websites (Flash). Worked with clients such as: ABC, Lost Series, Reebok, Hewlett Packard, Carnival Cruises, Concord Watches, Oglivy, R/GA, Cheil, Ultra16, Rokkan, Tender Creative, Indelible, Bigger Design.'
+  highlights: Won two Addy awards (Gold and Judges pick) for interactive promotional website.
+  keywords:
