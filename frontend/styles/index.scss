@@ -40,6 +40,7 @@ ul.dashed-ul {
     list-style: none;
     &::before {
       content: '—';
+      color: #a0aec0;
       display: inline-block;
       padding-right: var(--li-icon-padding);
       margin-left: calc(-1em - var(--li-icon-padding) / 2);
