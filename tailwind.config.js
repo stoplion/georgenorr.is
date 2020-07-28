@@ -4,8 +4,13 @@ module.exports = {
     content: ['./src/**/*.html'],
   },
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'bright-red': '#F24E1E',
+        'deep-purple': '#5551FF',
+      },
+    },
   },
   variants: {},
   plugins: [],
-}
+};

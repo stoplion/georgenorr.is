@@ -4,9 +4,10 @@
     {% render "head", metadata: site.metadata, title: page.title %}
   </head>
   <body class="{{ page.layout }} {{ page.page_class }}">
-    <main class="container mx-auto max-w-screen-md pt-6 leading-relaxed">
+    <main class="container mx-auto max-w-screen-md pt-6 leading-relaxed text-gray-800">
       {% assign basics = site.data.basics %}
       {% assign work = site.data.work %}
+      {% assign education = site.data.education %}
 
       <div>
         {% render "header", data: basics, %}
@@ -14,6 +15,11 @@
         {% render "work_experience",
             sectionHeader: 'Experience',
             work: work
+        %}
+
+        {% render "education",
+            sectionHeader: 'Education',
+            education: education
         %}
 
       </div>

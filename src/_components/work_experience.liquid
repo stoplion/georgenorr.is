@@ -1,27 +1,18 @@
-<section class="py-6">
-  <h2 class="text-xl pb-6 font-bold uppercase text-orange-700">
+<section class="pb-6">
+  <h2 class="text-xl pb-6 font-bold uppercase text-bright-red">
     {{sectionHeader}}
   </h2>
 
   <section>
-    <header>
-      <h3>
-        {{header}}
-      </h3>
-      <h3>
-        {{subheader}}
-      </h3>
-    </header>
-
     {% for workitem in work %}
       <div class="pb-xxl">
         <div class="pb-3">
           <div class="flex justify-between">
-            <span class="uppercase font-bold text-lg">
+            <span class="font-bold text-lg">
               {{workitem.position}}
-              <span class="text-gray-600">@</span>
+              <span class="text-gray-500">@</span>
               {% if workitem.website %}
-                <a class="text-blue-600 border-blue-400 border-b" target="_blank" href="{{workitem.website}}">
+                <a class="text-deep-purple border-gray-400 border-b" target="_blank" href="{{workitem.website}}">
                   {{ workitem.company }}
                 </a>
               {% else %}
@@ -37,28 +28,30 @@
           </div>
         </div>
 
-        {% if workitem.summary %}
-          {{ workitem.summary }}
-        {% endif %}
+        <div>
+          {% if workitem.summary %}
+            {{ workitem.summary }}
+          {% endif %}
 
-        {% if workitem.keywords %}
-          <ul class="list-disc list-outside ml-4 pb-4 text-gray-800">
-            {% for highlight in workitem.highlights %}
-              <li>{{highlight}}</li>
-            {% endfor %}
-          </ul>
-        {% endif %}
+          {% if workitem.highlights %}
+            <ul class="dashed-ul pb-4">
+              {% for highlight in workitem.highlights %}
+                <li>{{highlight}}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
 
-        {% if workitem.keywords %}
-          <h2 class="font-bold pb-1">
-            Technology used
-          </h2>
-          <ul class="list-disc list-inside">
-            {% for keyword in workitem.keywords %}
-              <li>{{keyword}}</li>
-            {% endfor %}
-          </ul>
-        {% endif %}
+          {% if workitem.keywords %}
+            <h2 class="font-bold pb-1">
+              Technology used
+            </h2>
+            <ul class="dashed-ul">
+              {% for keyword in workitem.keywords %}
+                <li>{{keyword}}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
 
       </div>
     {% endfor %}

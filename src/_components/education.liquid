@@ -1,0 +1,29 @@
+<section class="pb-6">
+  <h2 class="text-xl pb-6 font-bold uppercase text-orange-700">{{sectionHeader}}</h2>
+  <section>
+    {% for educationItem in education %}
+      <div class="pb-5">
+        {% if educationItem.studyType %}
+          <div>
+            <h2 class="uppercase font-bold text-lg">
+              {{ educationItem.studyType }}
+            </h2>
+            <h2>
+              {{ educationItem.institution }}
+            </h2>
+          </div>
+        {% else %}
+          <h2 class="uppercase font-bold text-lg">
+            {{ educationItem.institution }}
+          </h2>
+        {% endif %}
+
+        {% if educationItem.area %}
+          <p class="">
+            {{ educationItem.area }}
+          </p>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </section>
+</section>

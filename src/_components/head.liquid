@@ -5,9 +5,9 @@
 {% endcapture %}
 <title>
   {% if page_title != "" %}
-    {{ page_title | escape }}
-    |
     {{ metadata.title | escape }}
+    /
+    {{ page_title | escape }}
   {% else %}
     {{ metadata.title | escape }}:
     {{ metadata.tagline | escape }}

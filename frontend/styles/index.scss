@@ -2,6 +2,9 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+.pb-7 {
+  padding-bottom: 2.5rem;
+}
 .pb-xxl {
   padding-bottom: 3rem;
 }
@@ -27,5 +30,19 @@ body {
     width: 100%;
     display: block;
     height: 9px;
+  }
+}
+
+ul.dashed-ul {
+  --li-icon-padding: 6px;
+  margin-left: 1rem;
+  li {
+    list-style: none;
+    &::before {
+      content: '—';
+      display: inline-block;
+      padding-right: var(--li-icon-padding);
+      margin-left: calc(-1em - var(--li-icon-padding) / 2);
+    }
   }
 }
