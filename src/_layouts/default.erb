@@ -1,0 +1,14 @@
+{% assign basics = site.data.basics %}
+{% assign work = site.data.work %}
+{% assign education = site.data.education %}
+{% assign skills = site.data.skills %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    {% render "head", metadata: site.metadata, title: page.title %}
+  </head>
+  <body class="{{ page.layout }} {{ page.page_class }}">
+    {{content}}
+  </body>
+</html>

@@ -15,3 +15,14 @@ location:
   city: San Francisco
   countryCode: US
   region: California
+
+profiles:
+  - network: Github
+    username: stoplion
+    url: 'http://github.com/stoplion'
+  - network: Dribbble
+    username: stoplion
+    url: 'http://dribbble.com/stoplion'
+  - network: Instagram
+    username: stoplion
+    url: 'http://instagram.com/stoplion'
