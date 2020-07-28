@@ -1,13 +1,18 @@
 <section class="pb-6">
   <h2 class="text-xl pb-6 font-bold uppercase text-bright-red">{{sectionHeader}}</h2>
   <section>
-    {% for skillsItem in skills %}
+    {% for skill in skills %}
       <div class="pb-5">
-        {% if skillsItem.name %}
-          <h2 class="uppercase font-bold text-lg">
-            {{ skillsItem.name }}
-          </h2>
-        {% endif %}
+        <h2 class="font-bold text-lg pb-2">
+          {{ skill.name }}
+        </h2>
+
+      {% assign keywords_alphabetized = skill.keywords | sort %}
+        {% for keyword in keywords_alphabetized %}
+          <div class="text-sm mb-2 inline-flex items-center leading-sm px-3 py-1 bg-gray-200 rounded-full">
+            {{ keyword }}
+          </div>
+        {% endfor %}
       </div>
     {% endfor %}
   </section>

@@ -1,4 +1,4 @@
-<section class="pb-6">
+<section>
   <h2 class="text-xl pb-6 font-bold uppercase text-bright-red">
     {{sectionHeader}}
   </h2>
@@ -30,7 +30,9 @@
 
         <div>
           {% if workitem.summary %}
-            {{ workitem.summary }}
+            <div class="pb-4">
+              {{ workitem.summary }}
+            </div>
           {% endif %}
 
           {% if workitem.highlights %}
@@ -52,7 +54,6 @@
             </ul>
           {% endif %}
         </div>
-
       </div>
     {% endfor %}
   </section>
