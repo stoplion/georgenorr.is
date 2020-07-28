@@ -1,3 +1,8 @@
+{% assign basics = site.data.basics %}
+{% assign work = site.data.work %}
+{% assign education = site.data.education %}
+{% assign skills = site.data.skills %}
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -5,9 +10,6 @@
   </head>
   <body class="{{ page.layout }} {{ page.page_class }}">
     <main class="container mx-auto max-w-screen-md pt-6 leading-relaxed text-gray-800">
-      {% assign basics = site.data.basics %}
-      {% assign work = site.data.work %}
-      {% assign education = site.data.education %}
 
       <div>
         {% render "header", data: basics, %}
@@ -20,6 +22,11 @@
         {% render "education",
             sectionHeader: 'Education',
             education: education
+        %}
+
+        {% render "skills",
+            sectionHeader: 'Skills',
+            skills: skills
         %}
 
       </div>

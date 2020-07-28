@@ -1,1 +1,0 @@
-This is where you add dynamic blog-style content. The naming convention of these files is important, and must follow the format: YEAR-MONTH-DAY-post-title.EXT (aka .md, .html, etc.). The permalink can be customized for each post. Posts are a built-in collection, and you can configure other collections in addition to (or even instead of) posts.

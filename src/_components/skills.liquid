@@ -1,0 +1,14 @@
+<section class="pb-6">
+  <h2 class="text-xl pb-6 font-bold uppercase text-bright-red">{{sectionHeader}}</h2>
+  <section>
+    {% for skillsItem in skills %}
+      <div class="pb-5">
+        {% if skillsItem.name %}
+          <h2 class="uppercase font-bold text-lg">
+            {{ skillsItem.name }}
+          </h2>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </section>
+</section>
