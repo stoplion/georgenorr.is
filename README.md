@@ -11,6 +11,7 @@ The resume data is structured using `JSON Resume` schema.
   <summary>
     Example JSON Resume Schema:
   </summary>
+
 ```JSON
 {
   "basics": {
