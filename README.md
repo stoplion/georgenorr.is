@@ -112,11 +112,11 @@ Resume data is located in `src/data/resume`. It's written in [YAML](https://yaml
 
 ## Roadmap
 
-- [] Add PDF exporting
-- [] Add JSON exporting
-- [] Add a JSON Resume compile step
-- [] Add JSON Resume importing
-- [] Add LinkedIn Resume to JSON importing
-- [] Add Slim as Templating language
-- [] Add JSON Resume linting
-- [] Add more resume Liquid templates
+- [ ] Add PDF exporting
+- [ ] Add JSON exporting
+- [ ] Add a JSON Resume compile step
+- [ ] Add JSON Resume importing
+- [ ] Add LinkedIn Resume to JSON importing
+- [ ] Add Slim as Templating language
+- [ ] Add JSON Resume linting
+- [ ] Add more resume Liquid templates
