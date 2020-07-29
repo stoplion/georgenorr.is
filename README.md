@@ -1,5 +1,16 @@
-https://jsonresume.org/schema/
+## Resume Generator
 
+This is a static site resume generator using [BridgetownRB](https://www.bridgetownrb.com/).
+
+The resume data is structured using `JSON Resume` schema.
+
+- [jsonresume.org](https://jsonresume.org/schema/)
+- [resume-schema](https://github.com/jsonresume/resume-schema)
+
+<details>
+  <summary>
+    Example JSON Resume Schema:
+  </summary>
 ```JSON
 {
   "basics": {
@@ -95,3 +106,17 @@ https://jsonresume.org/schema/
   }]
 }
 ```
+</details>
+
+Resume data is located in `src/data/resume`. It's written in [YAML](https://yaml.org/). Each top level key in the `Resume Json` spec correlates to a YAML file in `src/data/resume`.
+
+## Roadmap
+
+- [] Add PDF exporting
+- [] Add JSON exporting
+- [] Add a JSON Resume compile step
+- [] Add JSON Resume importing
+- [] Add LinkedIn Resume to JSON importing
+- [] Add Slim as Templating language
+- [] Add JSON Resume linting
+- [] Add more resume Liquid templates
