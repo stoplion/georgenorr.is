@@ -40,6 +40,7 @@ ul.dashed-ul {
     list-style: none;
     &::before {
       content: '—';
+      color: #a0aec0;
       display: inline-block;
       padding-right: var(--li-icon-padding);
       margin-left: calc(-1em - var(--li-icon-padding) / 2);
@@ -49,4 +50,9 @@ ul.dashed-ul {
 
 .footer {
   padding: 8rem 0 4rem 0;
+}
+
+.top-links {
+  top: 30px;
+  right: 40px;
 }

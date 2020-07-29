@@ -7,7 +7,7 @@
           {{ skill.name }}
         </h2>
 
-      {% assign keywords_alphabetized = skill.keywords | sort %}
+        {% assign keywords_alphabetized = skill.keywords | sort %}
         {% for keyword in keywords_alphabetized %}
           <div class="text-sm mb-2 inline-flex items-center leading-sm px-3 py-1 bg-gray-200 rounded-full">
             {{ keyword }}
