@@ -26,3 +26,6 @@ profiles:
   - network: Instagram
     username: stoplion
     url: 'http://instagram.com/stoplion'
+  - network: LinkedIn
+    username: stoplion
+    url: 'https://www.linkedin.com/in/geonorris/'
