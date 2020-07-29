@@ -15,9 +15,15 @@
 # https://learnxinyminutes.com/docs/yaml/
 #
 
-baseurl: "" # OPTIONAL: the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. https://example.com
+baseurl: '' # OPTIONAL: the subpath of your site, e.g. /blog
+url: '' # the base hostname & protocol for your site, e.g. https://example.com
 
 permalink: pretty
-
+svg:
+  # Whether to optimize the SVG files with svg_optimizer.
+  #
+  # Type: Boolean
+  # Optional: true
+  # Default: false
+  optimize: true
 # timezone: America/Los_Angeles

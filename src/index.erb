@@ -10,24 +10,24 @@ title: Resume
 {% assign metadata = site.data.site_metadata %}
 
 <main class="px-6 lg:px-0 container mx-auto pt-6 leading-relaxed text-gray-800 max-w-screen-md">
-    <div>
-      {% render "shared/header", data: basics, %}
+  <div>
+    {% render "shared/header", data: basics, %}
 
-      {% render "resume/work_experience",
-          sectionHeader: 'Experience',
-          work: work
-      %}
+    {% render "resume/work_experience",
+        sectionHeader: 'Experience',
+        work: work
+    %}
 
-      {% render "resume/education",
-          sectionHeader: 'Education',
-          education: education
-      %}
+    {% render "resume/education",
+        sectionHeader: 'Education',
+        education: education
+    %}
 
-      {% render "resume/skills",
-          sectionHeader: 'Skills',
-          skills: skills
-      %}
+    {% render "resume/skills",
+        sectionHeader: 'Skills',
+        skills: skills
+    %}
 
-      {% render "shared/footer", metadata: metadata, profiles: basics.profiles %}
-    </div>
+    {% render "shared/footer", metadata: metadata, profiles: basics.profiles %}
+  </div>
 <main>
