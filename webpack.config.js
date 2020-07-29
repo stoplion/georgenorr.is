@@ -1,10 +1,10 @@
-const path = require("path");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const ManifestPlugin = require("webpack-manifest-plugin");
+const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
-  entry: "./frontend/javascript/index.js",
-  devtool: "source-map",
+  entry: './frontend/javascript/index.js',
+  devtool: 'source-map',
   // Set some or all of these to true if you want more verbose logging:
   stats: {
     modules: false,
@@ -13,33 +13,41 @@ module.exports = {
     children: false,
   },
   output: {
-    path: path.resolve(__dirname, "output", "_bridgetown", "static", "js"),
-    filename: "all.[contenthash].js",
+    path: path.resolve(__dirname, 'output', '_bridgetown', 'static', 'js'),
+    filename: 'all.[contenthash].js',
   },
   resolve: {
-    extensions: [".js", ".jsx"],
+    extensions: ['.js', '.jsx'],
+    alias: {
+      fs: 'pdfkit/js/virtual-fs.js',
+    },
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "../css/all.[contenthash].css",
+      filename: '../css/all.[contenthash].css',
     }),
     new ManifestPlugin({
-      fileName: path.resolve(__dirname, ".bridgetown-webpack", "manifest.json"),
+      fileName: path.resolve(__dirname, '.bridgetown-webpack', 'manifest.json'),
     }),
   ],
   module: {
     rules: [
+      {enforce: 'post', test: /fontkit[/\\]index.js$/, loader: 'transform-loader?brfs'},
+      {enforce: 'post', test: /unicode-properties[/\\]index.js$/, loader: 'transform-loader?brfs'},
+      {enforce: 'post', test: /linebreak[/\\]src[/\\]linebreaker.js/, loader: 'transform-loader?brfs'},
+      {test: /src[/\\]assets/, loader: 'arraybuffer-loader'},
+      {test: /\.afm$/, loader: 'raw-loader'},
       {
         test: /\.(js|jsx)/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
-            presets: ["@babel/preset-env"],
+            presets: ['@babel/preset-env'],
             plugins: [
-              ["@babel/plugin-proposal-decorators", { "legacy": true }],
-              ["@babel/plugin-proposal-class-properties", { "loose" : true }],
+              ['@babel/plugin-proposal-decorators', {legacy: true}],
+              ['@babel/plugin-proposal-class-properties', {loose: true}],
               [
-                "@babel/plugin-transform-runtime",
+                '@babel/plugin-transform-runtime',
                 {
                   helpers: false,
                 },
@@ -52,37 +60,30 @@ module.exports = {
         test: /\.(s[ac]|c)ss$/,
         use: [
           MiniCssExtractPlugin.loader,
-          "css-loader",
+          'css-loader',
           {
-            loader: "sass-loader",
+            loader: 'sass-loader',
             options: {
               sassOptions: {
-                includePaths: [
-                  path.resolve(__dirname, "src/_components"),
-                  path.resolve(__dirname, "src/_includes"),
-                ],
+                includePaths: [path.resolve(__dirname, 'src/_components'), path.resolve(__dirname, 'src/_includes')],
               },
             },
           },
           {
-            loader: "postcss-loader",
+            loader: 'postcss-loader',
             options: {
-              ident: "postcss",
-              plugins: [
-                require("postcss-import"),
-                require("tailwindcss"),
-                require("autoprefixer"),
-              ],
+              ident: 'postcss',
+              plugins: [require('postcss-import'), require('tailwindcss'), require('autoprefixer')],
             },
           },
         ],
       },
       {
         test: /\.woff2?$|\.ttf$|\.eot$|\.svg$/,
-        loader: "file-loader",
+        loader: 'file-loader',
         options: {
-          outputPath: "../fonts",
-          publicPath: "../fonts",
+          outputPath: '../fonts',
+          publicPath: '../fonts',
         },
       },
     ],

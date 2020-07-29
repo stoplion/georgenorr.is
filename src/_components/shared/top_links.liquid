@@ -1,11 +1,15 @@
-<div class="top-links flex">
-  <a class="transition-colors duration-100 mr-1 flex items-center rounded-sm bg-gray-300 hover:bg-gray-400 py-1 px-2 text-sm" href="https://github.com/stoplion/georgenorr.is" target="_blank">
-    {% svg 'assets/down-arrow.svg' %}
-    <span class="pl-1">
-      Download PDF
-    </span>
-  </a>
-  <a class="transition-colors duration-100 flex items-center rounded-sm bg-gray-300 hover:bg-gray-400 py-1 px-2 text-sm" href="https://github.com/stoplion/georgenorr.is" target="_blank">
+<div class="flex top-0 left-0 right-0 md:justify-end justify-center pt-3 px-3">
+
+
+  <div data-controller="export-pdf">
+    <a href="#" data-action="click->export-pdf#greet" class="transition-colors duration-100 mr-1 flex items-center rounded-sm bg-gray-300 hover:bg-gray-400 py-1 px-2 text-sm">
+      {% svg 'assets/down-arrow.svg' %}
+      <span class="pl-1">
+        Download PDF
+      </span>
+    </a>
+  </div>
+  <a href="https://github.com/stoplion/georgenorr.is" class="transition-colors duration-100 flex items-center rounded-sm bg-gray-300 hover:bg-gray-400 py-1 px-2 text-sm" target="_blank">
     {% svg 'assets/code-fork.svg' %}
     <span class="pl-1">
       Fork on Github
