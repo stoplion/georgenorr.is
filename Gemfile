@@ -18,4 +18,4 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem "bridgetown", "~> 0.16"
 
-gem "bridgetown-inline-svg", "~> 1.1", :group => :bridgetown_plugin
+gem "bridgetown-inline-svg", "~> 1.1", :group => :bridgetown_plugins
