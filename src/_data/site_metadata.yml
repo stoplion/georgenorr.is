@@ -9,3 +9,5 @@ tagline:
 email: mr@georgenorr.is
 author: George Norris
 year: 2020
+show_fork_link: true
+show_pdf_download_link: true
