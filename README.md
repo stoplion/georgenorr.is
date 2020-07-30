@@ -126,12 +126,13 @@ The resume data is structured using `JSON Resume` schema.
 - You can use (Markdown)[https://www.markdownguide.org/] in the Yaml files to format the text. 
 
 ## Roadmap
+Any help here is welcome!!
 
 - [ ] Add PDF exporting
 - [ ] Add JSON exporting
-- [ ] Add a JSON Resume compile step
-- [ ] Add JSON Resume importing
-- [ ] Add LinkedIn Resume to JSON importing
+- [ ] Add a JSON Resume compile step (each time you make a YAML edit, it compiles down the resume.json files)
+- [ ] Add JSON Resume importing (allow some way for users to use their current resume.json to populate and build the YAML files here)
+- [ ] Add LinkedIn Resume to JSON importing (similar to the last one, but allow users to ref their LinkedIn profile to build the JSON / YAML)
 - [ ] Add Slim as Templating language
-- [ ] Add JSON Resume linting
-- [ ] Add more resume Liquid templates
+- [ ] Add JSON Resume linting (point out issues with the resume.json build)
+- [ ] Add more resume Liquid templates (allow users to change the template)
