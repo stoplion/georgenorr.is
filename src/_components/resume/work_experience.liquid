@@ -5,6 +5,11 @@
 
   <section>
     {% for workitem in work %}
+      {% comment %} {% if forloop.first == true %}
+        First time through!
+      {% else %}
+        Not the first time.
+      {% endif %} {% endcomment %}
       <div class="pb-xxl">
         <div class="pb-3">
           <div class="flex justify-between flex-col sm:flex-row">
@@ -36,7 +41,7 @@
           {% endif %}
 
           {% if workitem.highlights %}
-            <ul class="dashed-ul pb-4">
+            <ul class="dashed-ul pb-5">
               {% for highlight in workitem.highlights %}
                 <li>{{highlight}}</li>
               {% endfor %}
@@ -44,14 +49,16 @@
           {% endif %}
 
           {% if workitem.keywords %}
-            <h2 class="font-bold pb-1">
-              Technology used
-            </h2>
-            <ul class="dashed-ul">
-              {% for keyword in workitem.keywords %}
-                <li>{{keyword}}</li>
-              {% endfor %}
-            </ul>
+            <div class="ml-4">
+              <h2 class="font-semibold pb-1">
+                Technology used:
+              </h2>
+              <ul class="dashed-ul">
+                {% for keyword in workitem.keywords %}
+                  <li>{{keyword}}</li>
+                {% endfor %}
+              </ul>
+            </div>
           {% endif %}
         </div>
       </div>
