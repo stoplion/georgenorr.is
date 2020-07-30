@@ -5,13 +5,8 @@
 
   <section>
     {% for workitem in work %}
-      {% comment %} {% if forloop.first == true %}
-        First time through!
-      {% else %}
-        Not the first time.
-      {% endif %} {% endcomment %}
       <div class="pb-xxl">
-        <div class="pb-3">
+        <div>
           <div class="flex justify-between flex-col sm:flex-row">
             <span class="font-bold text-lg">
               {{workitem.position}}
@@ -33,25 +28,27 @@
           </div>
         </div>
 
-        <div>
+        <div class="pt-3">
           {% if workitem.summary %}
-            <div class="pb-4">
+            <div>
               {{ workitem.summary | markdownify }}
             </div>
           {% endif %}
 
           {% if workitem.highlights %}
-            <ul class="dashed-ul pb-5">
-              {% for highlight in workitem.highlights %}
-                <li>
-                  {{highlight | markdownify | remove: '<p>' | remove: '</p>'}}
-                </li>
-              {% endfor %}
-            </ul>
+            <div class="ml-4">
+              <ul class="dashed-ul">
+                {% for highlight in workitem.highlights %}
+                  <li>
+                    {{highlight | markdownify | remove: '<p>' | remove: '</p>'}}
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
           {% endif %}
 
           {% if workitem.keywords %}
-            <div class="ml-4">
+            <div class="ml-4 pt-4">
               <h2 class="font-semibold pb-1">
                 Technology used:
               </h2>
