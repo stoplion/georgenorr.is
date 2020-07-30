@@ -4,10 +4,10 @@
 - clone repository
 - (make sure you have Ruby installed on your computer)
 - install `bundler` with `gem install bundler` (Ruby package manager)
-- run `bundle install`
+- run `bundle install` (installs all Ruby gems needed for this project)
 - [install Yarn](https://classic.yarnpkg.com/en/docs/install) (Javascript package manager)
-- run `yarn install`
-- checkout `package.json` for all commands.. to start up run `yarn run start` to start local server
+- run `yarn install` (installs all Javascript packages needed for this project)
+- checkout `package.json` for all commands (under `scripts`) To start up run `yarn run start` to start local server. 
 - run `yarn run build` to build the static HTML site..
 
 
