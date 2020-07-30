@@ -36,14 +36,16 @@
         <div>
           {% if workitem.summary %}
             <div class="pb-4">
-              {{ workitem.summary }}
+              {{ workitem.summary | markdownify }}
             </div>
           {% endif %}
 
           {% if workitem.highlights %}
             <ul class="dashed-ul pb-5">
               {% for highlight in workitem.highlights %}
-                <li>{{highlight}}</li>
+                <li>
+                  {{highlight | markdownify | remove: '<p>' | remove: '</p>'}}
+                </li>
               {% endfor %}
             </ul>
           {% endif %}
