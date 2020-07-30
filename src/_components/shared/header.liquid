@@ -1,10 +1,13 @@
 <header class="pb-7">
-  <h1 class="uppercase text-xxl font-bold py-xxl">
+  <h1 class="uppercase text-xxl font-bold pb-6">
     {{ data.name }}
   </h1>
-  <h4 class="pb-3 font-bold">
-    {{ data.label }}
-  </h4>
+
+  <div class="pb-xxl">
+    {% render 'shared/social_links', data: data %}
+  </div>
+
+
   <p class="pb-6">
     {{ data.summary }}
   </p>
