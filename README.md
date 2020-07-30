@@ -8,7 +8,7 @@
 - [install Yarn](https://classic.yarnpkg.com/en/docs/install) (Javascript package manager)
 - run `yarn install` (installs all Javascript packages needed for this project)
 - checkout `package.json` for all commands (under `scripts`) To start up run `yarn run start` to start local server. 
-- run `yarn run build` to build the static HTML site..
+- run `yarn run build` to build the static HTML site.. the static build will be under `output`
 
 
 This is a static site resume generator using [BridgetownRB](https://www.bridgetownrb.com/).
