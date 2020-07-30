@@ -1,4 +1,5 @@
 ## Resume Generator
+This is a static site resume generator using [BridgetownRB](https://www.bridgetownrb.com/).
 
 ### Get started
 - clone repository
@@ -11,7 +12,7 @@
 - run `yarn run build` to build the static HTML site.. the static build will be under `output`
 
 
-This is a static site resume generator using [BridgetownRB](https://www.bridgetownrb.com/).
+### Edit data
 
 The resume data is structured using `JSON Resume` schema.
 
@@ -120,9 +121,9 @@ The resume data is structured using `JSON Resume` schema.
 ```
 </details>
 
-Resume data is located in `src/data/resume`.   
-It's written in [YAML](https://yaml.org/).   
-Each top level key in the `Resume Json` spec correlates to a YAML file in `src/data/resume`.
+- Resume data is located in `src/data/resume`.   
+- Data is written in [YAML](https://yaml.org/). Each top level key in the `Resume Json` spec correlates to a YAML file in `src/data/resume` (currently it's missing some of these, only basics, work, education, and skill are there now).
+- You can use (Markdown)[https://www.markdownguide.org/] in the Yaml files to format the text. 
 
 ## Roadmap
 
