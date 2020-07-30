@@ -1,5 +1,16 @@
 ## Resume Generator
 
+### Get started
+- clone repository
+- (make sure you have Ruby installed on your computer)
+- install `bundler` with `gem install bundler` (Ruby package manager)
+- run `bundle install`
+- [install Yarn](https://classic.yarnpkg.com/en/docs/install) (Javascript package manager)
+- run `yarn install`
+- checkout `package.json` for all commands.. to start up run `yarn run start` to start local server
+- run `yarn run build` to build the static HTML site..
+
+
 This is a static site resume generator using [BridgetownRB](https://www.bridgetownrb.com/).
 
 The resume data is structured using `JSON Resume` schema.
