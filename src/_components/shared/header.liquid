@@ -3,13 +3,12 @@
     {{ data.name }}
   </h1>
 
-  <div class="pb-xxl">
+  <div class="pb-6">
     {% render 'shared/social_links', data: data %}
   </div>
 
-
   <p class="pb-6">
-    {{ data.summary }}
+    {{ data.summary | markdownify }}
   </p>
 
 </header>
