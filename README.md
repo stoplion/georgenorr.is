@@ -109,7 +109,9 @@ The resume data is structured using `JSON Resume` schema.
 ```
 </details>
 
-Resume data is located in `src/data/resume`. It's written in [YAML](https://yaml.org/). Each top level key in the `Resume Json` spec correlates to a YAML file in `src/data/resume`.
+Resume data is located in `src/data/resume`.   
+It's written in [YAML](https://yaml.org/).   
+Each top level key in the `Resume Json` spec correlates to a YAML file in `src/data/resume`.
 
 ## Roadmap
 
