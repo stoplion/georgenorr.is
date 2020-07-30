@@ -5,19 +5,19 @@
   endDate: Present
   summary:
   highlights:
-    - Designed the architecture for Trailmaker, Salesforces Trailhead content editor
-    - Built JWT authentication system for Trailmaker
-    - Tackled scaling issues by designing and leading the transitioning to an asynchronous background architecture — using Redis and a queue system to handle long-running/CPU intensive requests.
+    - Designed and the built the initial MVP for Trailmaker, Trailhead's main content editor
+    - Shipped the JWT authentication system for Trailmaker
+    - Shipped the MVP for Trailhead's popular [Trailmix feature](https://trailhead.salesforce.com/en/trailmixes)
+    - Planned the design of a background jobs architecture to handle Trailmaker's scaling
     - Built the UI for Trailmaker using, React, Redux, Styled-Components
-    - Lead the effort to introduce an end-to-end testing suite using Cypress
-    - Setup the Heroku instances, buildpacks, environment variable handlers, etc.
-      to deploy Trailmaker to production and other environments
+    - Introduced an end-to-end testing suite using Cypress
+    - Setup the Heroku infrastructure to handle multiple environment deployments
   keywords:
     - Node.js
-    - Optimizely
-    - Javascript
-    - CSS
-    - Git
+    - React / Redux
+    - TypeScript
+    - Sass
+    - Heroku
 
 - company: OpenTable
   position: Senior Engineer
@@ -26,7 +26,7 @@
   endDate: March 2016
   summary:
   highlights:
-    - Worked on OpenTables NodeJS backend which powers it's restaurant listings
+    - Shipped several features to OpenTable's restaurant listings service (powered by NodeJS)
     - Setup AB testing (using Optimizely), to test incremental UI changes
     - Implemented load testing simulations for improving performance during peak seasons
   keywords:
@@ -34,7 +34,6 @@
     - Optimizely
     - Javascript
     - CSS
-    - Git
 
 - company: Upstart
   position: Senior Engineer
@@ -43,8 +42,8 @@
   endDate: Aug 2015
   summary:
   highlights:
+    - Independently implemented a (responsive) redesign for the site's signup flow, which increased conversions on mobile
     - Built the frontend for Upstarts lending platform
-    - Lead the technical implementation for a redesigned user signup flow, using Ruby On Rails and AngularJS.
     - Introduced Javascript unit testing to the application
   keywords:
     - Ruby on Rails
