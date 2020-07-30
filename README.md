@@ -136,3 +136,7 @@ Any help here is welcome!!
 - [ ] Add Slim as Templating language
 - [ ] Add JSON Resume linting (point out issues with the resume.json build)
 - [ ] Add more resume Liquid templates (allow users to change the template)
+
+
+### Hosting
+https://www.netlify.com/ is amazing!
