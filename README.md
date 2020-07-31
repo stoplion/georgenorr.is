@@ -4,9 +4,9 @@ This is a static site resume generator using [BridgetownRB](https://www.bridgeto
 ### Get started
 - clone repository
 - (make sure you have Ruby installed on your computer)
-- install `bundler` with `gem install bundler` (Ruby package manager)
+- install `bundler` with `gem install bundler`
 - run `bundle install` (installs all Ruby gems needed for this project)
-- [install Yarn](https://classic.yarnpkg.com/en/docs/install) (Javascript package manager)
+- [install Yarn](https://classic.yarnpkg.com/en/docs/install)
 - run `yarn install` (installs all Javascript packages needed for this project)
 - checkout `package.json` for all commands (under `scripts`) To start up run `yarn run start` to start local server. 
 - run `yarn run build` to build the static HTML site.. the static build will be under `output`
