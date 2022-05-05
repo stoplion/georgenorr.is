@@ -1,0 +1,35 @@
+name: George Norris
+label: Software Engineer
+picture: ""
+email: mr@georgenorr.is
+phone: "(***) ***-****"
+website: http://georgenorr.is
+summary: |
+  **Software engineer** with over 10 years of experience as an individual contributor and team player.
+
+  **Former UX-designer** with a love for design and attention an to detail.
+  Skilled in many full-stack languages and disciplines such
+  as JavaScript, Node.js, React, Ruby, Ruby On Rails, Git, CSS.
+location:
+  address:
+  postalCode:
+  city: San Francisco
+  countryCode: US
+  region: California
+
+profiles:
+  - network: Github
+    username: stoplion
+    url: "http://github.com/stoplion"
+  # - network: Dribbble
+  #   username: stoplion
+  #   url: "http://dribbble.com/stoplion"
+  # - network: Instagram
+  #   username: stoplion
+  #   url: "http://instagram.com/stoplion"
+  - network: LinkedIn
+    username: geonorris
+    url: "https://www.linkedin.com/in/geonorris/"
+  - network: CodePen
+    username: stoplion
+    url: "https://codepen.com/stoplion"

@@ -1,0 +1,45 @@
+- name: Frontend
+  level: Master
+  keywords:
+    - HTML
+    - CSS
+    - SCSS
+    - PostCSS
+    - Javascript
+    - Typescript
+    - Cypress
+    - Jest
+    - React
+    - Redux
+    - ElectronJS
+    - AngularJS
+    - Webpack
+    - Git
+    - Redux
+    - Rust
+    - Lodash
+    - Local Storage
+    - WebSockets
+
+- name: Backend
+  level: Master
+  keywords:
+    - Node
+    - Ruby on Rails
+    - Ruby
+    - AWS
+    - Heroku
+    - Git
+    - Postgres
+    - Redis
+    - Algolia
+    - Github Actions
+
+- name: Design / UX
+  level: Master
+  keywords:
+    - Figma
+    - Sketch
+    - Illustrator
+    - Photoshop
+    - Framer

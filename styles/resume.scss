@@ -1,0 +1,64 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.pb-7 {
+  padding-bottom: 2.5rem;
+}
+.pb-xxl {
+  padding-bottom: 3rem;
+}
+
+.pt-xxl {
+  padding-top: 3rem;
+}
+
+.py-xxl {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.text-xxl {
+  font-size: 2rem;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  &::before {
+    content: "";
+    background: black;
+    width: 100%;
+    display: block;
+    height: 9px;
+  }
+}
+
+ul.dashed-ul {
+  --li-icon-padding: 6px;
+  margin-left: 1rem;
+  li {
+    list-style: none;
+    &::before {
+      content: "—";
+      color: #a0aec0;
+      display: inline-block;
+      padding-right: var(--li-icon-padding);
+      margin-left: calc(-1em - var(--li-icon-padding) / 2);
+    }
+  }
+}
+
+.footer {
+  padding: 8rem 0 4rem 0;
+}
+
+.top-links {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+
+strong,
+b {
+  font-weight: 600;
+}
