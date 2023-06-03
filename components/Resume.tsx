@@ -7,7 +7,7 @@ import education from "../data/education.yaml";
 
 export const Resume = () => {
   return (
-    <main className="container max-w-screen-md px-6 pt-6 mx-auto leading-relaxed text-gray-800 lg:px-0">
+    <main className="bg-white container max-w-screen-md px-6 pt-6 mx-auto leading-relaxed text-gray-800">
       <div>
         <Header />
         <Experience />

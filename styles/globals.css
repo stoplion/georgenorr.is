@@ -18,3 +18,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.pattern-bg {
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: linear-gradient(#b5b5b5ca 1px, transparent 1px), linear-gradient(to right, #b5b5b5ca 1px, #dbdada 1px);
+  background-size: 20px 20px;
+}

@@ -1,3 +1,21 @@
+- company: Ottertune
+  position: Senior Engineer and Engineer Manager
+  website: http://ottertune.com
+  startDate: May 2022
+  endDate: Current
+  summary:
+  highlights:
+    - Lead the technical effort (and team management) for a version 2.0 rebuild
+    - Contributing code and review others code
+    - Team management
+    - Technical Lead
+  keywords:
+    - React / Redux
+    - Node.js
+    - TypeScript
+    - Vite
+    - MUI / Material
+
 - company: Blend
   position: Senior Engineer
   website: http://blend.com
